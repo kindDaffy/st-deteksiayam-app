@@ -6,6 +6,15 @@ import sys
 from ultralytics import YOLO
 from PIL import Image
 import tempfile
+import os
+import subprocess
+
+# Install dependencies manually if not installed
+required_packages = ["opencv-python-headless", "streamlit", "ultralytics"]
+
+for package in required_packages:
+    subprocess.call([os.sys.executable, "-m", "pip", "install", package])
+
 
 # Get the absolute path of the current file
 FILE = Path(__file__).resolve()
