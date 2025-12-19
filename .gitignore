@@ -1,2 +1,9 @@
-# created by virtualenv automatically
-*
+# Ignore virtual environments
+venv/
+__pycache__/
+
+# Ignore all files except images, videos, and weights
+/*
+!images/
+!videos/
+!weights/
