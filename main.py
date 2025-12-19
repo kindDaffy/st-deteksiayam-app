@@ -94,7 +94,7 @@ if source_radio == IMAGE:
                 st.image(default_image_path, caption="Default Image", use_container_width=True)
             else:
                 uploaded_image = Image.open(source_image)
-                st.image(source_image, caption="Uploaded Image", use_container_width=True)
+                st.image(uploaded_image, caption="Uploaded Image", use_container_width=True)
         except Exception as e:
             st.error("Error Occurred While Opening the Image")
             st.error(e)
@@ -191,3 +191,4 @@ elif source_radio == VIDEO:
 
             except Exception as e:
                 st.sidebar.error("Error Loading Video" + str(e))
+
